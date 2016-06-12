@@ -1,5 +1,6 @@
 package androidthreelayout.tqp.com.coordinatorlayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 /**
  * Created by TQP on 2016/6/7.
@@ -32,6 +34,14 @@ public class TestActivity extends AppCompatActivity {
         });
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Button btn = (Button) findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestActivity.this, Test2Activity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

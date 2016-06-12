@@ -21,6 +21,9 @@
 
         <activity android:name=".TestActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Test2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
